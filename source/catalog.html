@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
+
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <div class="page-header__logo">
-        <a class="page-header__link">
-          <img class="page-header__logo-image" src="https://via.placeholder.com/33x38" width="33" height="38"
-            alt="Логотип Кэт энерджи">
-        </a>
-      </div>
-      <div class="page-header__logo-title">
-        <a class="page-header__link">
-          <img class="page-header__title-image" src="https://via.placeholder.com/101x88" width="101" height="18"
-            alt="Логотип Кэт энерджи">
-        </a>
-      </div>
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/33x38" width="33" height="38"
+          alt="Логотип Кэт энерджи">
+      </a>
+      <a class="page-header__logo-title">
+        <img class="page-header__title-image" src="https://via.placeholder.com/101x88" width="101" height="18"
+          alt="Логотип Кэт энерджи">
+      </a>
+      <button class="btn page-header__button" type="button"><span class="visually-hidden">Показать меню</span></button>
     </div>
-    <button class="btn page-header__button" type="button"><span class="visually-hidden">Показать меню</span></button>
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
@@ -38,184 +36,180 @@
   <main class="page-main">
     <div class="page-main__catalog catalog">
       <h1 class="catalog__title">Каталог продукции</h1>
-      <ul class="catalog__list catalog-list">
-        <li class="catalog-list__item card">
-          <div class="card-wrapper">
-            <a href=""><img src="https://via.placeholder.com/140x144" class="card-image" width="140" height="144"
-                alt="Cat energy pro 500 грамм вкус-курица">
-            </a>
-            <p class="card__name">Cat Energy
-              PRO 500 г</p>
-            <table class="card__info table">
+      <ul class="catalog__list ">
+        <li class="catalog__item card">
+          <div class="card__wrapper">
+            <a class="card__link" href=""><img src="https://via.placeholder.com/140x144" class="card-image" width="140"
+                height="144" alt="Cat energy pro 500 грамм вкус-курица">
+
+            <span class="card__name">Cat Energy
+              PRO 500 г</span></a>
+            <table class="card__table">
               <tr>
-                <th class="table__name">Объем</th>
-                <td class="table__value">500 г</td>
+                <th class="card__table-name">Объем</th>
+                <td class="card__table-value">500 г</td>
               </tr>
               <tr>
-                <th class="table__name">Вкус</th>
-                <td class="table__value">Курица</td>
+                <th class="card__table-name">Вкус</th>
+                <td class="card__table-value">Курица</td>
               </tr>
               <tr>
-                <th class="table__name">Цена</th>
-                <td class="table__value">700 Р.</td>
-              </tr>
-            </table>
-            <button class="card__order button">Заказать</button>
-          </div>
-        </li>
-        <li class="catalog-list__item card">
-          <div class="card-wrapper">
-            <a href=""><img src="https://via.placeholder.com/140x144" class="card-image" width="140" height="144"
-                alt="Cat energy pro 1000 грамм вкус-курица">
-            </a>
-            <p class="card__name">Cat Energy
-              PRO 1000 г</p>
-            <table class="card__info table">
-              <tr>
-                <th class="table__name">Объем</th>
-                <td class="table__value">1000 г</td>
-              </tr>
-              <tr>
-                <th class="table__name">Вкус</th>
-                <td class="table__value">Курица</td>
-              </tr>
-              <tr>
-                <th class="table__name">Цена</th>
-                <td class="table__value">1000 Р.</td>
+                <th class="card__table-name">Цена</th>
+                <td class="card__table-value">700 Р.</td>
               </tr>
             </table>
-            <button class="card__order button">Заказать</button>
+            <a class="card__order button">Заказать</a>
           </div>
         </li>
-        <li class="catalog-list__item card">
-          <div class="card-wrapper">
-            <a href=""><img src="https://via.placeholder.com/140x144" class="card-image" width="140" height="144"
-                alt="Cat energy pro 500 грамм вкус-рыба">
+        <li class="catalog__item card">
+          <div class="card__wrapper">
+            <a class="card__link" href=""><img src="https://via.placeholder.com/140x144" class="card__image" width="140"
+                height="144" alt="Cat energy pro 1000 грамм вкус-курица">
+              <span class="card__name">Cat Energy PRO 1000 г</span>
             </a>
-            <p class="card__name">Cat Energy
-              PRO 500 г</p>
-            <table class="card__info table">
+            <table class="card__table">
               <tr>
-                <th class="table__name">Объем</th>
-                <td class="table__value">500 г</td>
+                <th class="card__table-name">Объем</th>
+                <td class="card__table-value">1000 г</td>
               </tr>
               <tr>
-                <th class="table__name">Вкус</th>
-                <td class="table__value">Рыба</td>
+                <th class="card__table-name">Вкус</th>
+                <td class="card__table-value">Курица</td>
               </tr>
               <tr>
-                <th class="table__name">Цена</th>
-                <td class="table__value">700 Р.</td>
+                <th class="card__table-name">Цена</th>
+                <td class="card__table-value">1000 Р.</td>
               </tr>
             </table>
-            <button class="card__order button">Заказать</button>
+            <a class="card__order button">Заказать</a>
           </div>
         </li>
-        <li class="catalog-list__item card">
-          <div class="card-wrapper">
-            <a href=""><img src="https://via.placeholder.com/140x144" class="card-image" width="140" height="144"
-                alt="Cat energy pro 1000 грамм вкус-рыба">
-            </a>
-            <p class="card__name">Cat Energy
-              PRO 1000 г</p>
-            <table class="card__info table">
+        <li class="catalog__item card">
+          <div class="card__wrapper">
+            <a class="card__link" href=""><img src="https://via.placeholder.com/140x144" class="card__image" width="140"
+                height="144" alt="Cat energy pro 500 грамм вкус-рыба">
+              <span class="card__name">Cat Energy
+                PRO 500 г</span></a>
+            <table class="card__table">
               <tr>
-                <th class="table__name">Объем</th>
-                <td class="table__value">1000 г</td>
+                <th class="card__table-name">Объем</th>
+                <td class="card__table-value">500 г</td>
               </tr>
               <tr>
-                <th class="table__name">Вкус</th>
-                <td class="table__value">Рыба</td>
+                <th class="card__table-name">Вкус</th>
+                <td class="card__table-value">Рыба</td>
               </tr>
               <tr>
-                <th class="table__name">Цена</th>
-                <td class="table__value">1000 Р.</td>
+                <th class="card__table-name">Цена</th>
+                <td class="card__table-value">700 Р.</td>
               </tr>
             </table>
-            <button class="card__order button">Заказать</button>
+            <a class="card__order button">Заказать</a>
           </div>
         </li>
-        <li class="catalog-list__item card">
-          <div class="card-wrapper">
-            <a href=""><img src="https://via.placeholder.com/140x144" class="card-image" width="140" height="144"
-                alt="Cat energy Slim 500 грамм вкус-гречка">
-            </a>
-            <p class="card__name">Cat Energy
-              Slim 500 г</p>
-            <table class="card__info table">
+        <li class="catalog__item card">
+          <div class="card__wrapper">
+            <a class="card__link" href=""><img src="https://via.placeholder.com/140x144" class="card-image" width="140"
+                height="144" alt="Cat energy pro 1000 грамм вкус-рыба">
+
+              <span class="card__name">Cat Energy
+                PRO 1000 г</span></a>
+            <table class="card__table">
               <tr>
-                <th class="table__name">Объем</th>
-                <td class="table__value">500 г</td>
+                <th class="card__table-name">Объем</th>
+                <td class="card__table-value">1000 г</td>
               </tr>
               <tr>
-                <th class="table__name">Вкус</th>
-                <td class="table__value">Гречка</td>
+                <th class="card__table-name">Вкус</th>
+                <td class="card__table-value">Рыба</td>
               </tr>
               <tr>
-                <th class="table__name">Цена</th>
-                <td class="table__value">400 Р.</td>
+                <th class="card__table-name">Цена</th>
+                <td class="card__table-value">1000 Р.</td>
               </tr>
             </table>
-            <button class="card__order button">Заказать</button>
+            <a class="card__order button">Заказать</a>
           </div>
         </li>
-        <li class="catalog-list__item card">
-          <div class="card-wrapper">
-            <a href=""><img src="https://via.placeholder.com/140x144" class="card-image" width="140" height="144"
-                alt="Cat energy Slim 100 грамм вкус-гречка">
-            </a>
-            <p class="card__name">Cat Energy
-              Slim 1000 г</p>
-            <table class="card__info table">
+        <li class="catalog__item card">
+          <div class="card__wrapper">
+            <a class="card__link" href=""><img src="https://via.placeholder.com/140x144" class="card__image" width="140"
+                height="144" alt="Cat energy Slim 500 грамм вкус-гречка">
+
+              <span class="card__name">Cat Energy
+                Slim 500 г</span></a>
+              <table class="card__table">
+                <tr>
+                  <th class="card__table-name">Объем</th>
+                  <td class="card__table-value">500 г</td>
+                </tr>
+                <tr>
+                  <th class="card__table-name">Вкус</th>
+                  <td class="card__table-value">Гречка</td>
+                </tr>
+                <tr>
+                  <th class="card__table-name">Цена</th>
+                  <td class="card__table-value">400 Р.</td>
+                </tr>
+              </table>
+              <a class="card__order button">Заказать</a>
+          </div>
+        </li>
+        <li class="catalog__item card">
+          <div class="card__wrapper">
+            <a class="card__link" href=""><img src="https://via.placeholder.com/140x144" class="card__image" width="140"
+                height="144" alt="Cat energy Slim 100 грамм вкус-гречка">
+
+              <span class="card__name">Cat Energy
+                Slim 1000 г</span></a>
+            <table class="card__table">
               <tr>
-                <th class="table__name">Объем</th>
-                <td class="table__value">1000 г</td>
+                <th class="card__table-name">Объем</th>
+                <td class="card__table-value">1000 г</td>
               </tr>
               <tr>
-                <th class="table__name">Вкус</th>
-                <td class="table__value">Гречка</td>
+                <th class="card__table-name">Вкус</th>
+                <td class="card__table-value">Гречка</td>
               </tr>
               <tr>
-                <th class="table__name">Цена</th>
-                <td class="table__value">700 Р.</td>
+                <th class="card__table-name">Цена</th>
+                <td class="card__table-value">700 Р.</td>
               </tr>
             </table>
-            <button class="card__order button">Заказать</button>
+            <a class="card__order button">Заказать</a>
           </div>
         </li>
-        <li class="catalog-list__item card">
-          <div class="card-wrapper">
-            <a href=""><img src="https://via.placeholder.com/140x144" class="card-image" width="140" height="144"
-                alt="Cat energy Slim 500 грамм вкус-рис">
-            </a>
-            <p class="card__name">Cat Energy
-              Slim 500 г</p>
-            <table class="card__info table">
+        <li class="catalog__item card">
+          <div class="card__wrapper">
+            <a class="card__link" href=""><img src="https://via.placeholder.com/140x144" class="card__image" width="140"
+                height="144" alt="Cat energy Slim 500 грамм вкус-рис">
+
+              <span class="card__name">Cat Energy
+                Slim 500 г</span></a>
+            <table class="card__table">
               <tr>
-                <th class="table__name">Объем</th>
-                <td class="table__value">500 г</td>
+                <th class="card__table-name">Объем</th>
+                <td class="card__table-value">500 г</td>
               </tr>
               <tr>
-                <th class="table__name">Вкус</th>
-                <td class="table__value">Рис</td>
+                <th class="card__table-name">Вкус</th>
+                <td class="card__table-value">Рис</td>
               </tr>
               <tr>
-                <th class="table__name">Цена</th>
-                <td class="table__value">500 Р.</td>
+                <th class="card__table-name">Цена</th>
+                <td class="card__table-value">500 Р.</td>
               </tr>
             </table>
-            <button class="card__order button">Заказать</button>
+            <a class="card__order button">Заказать</a>
           </div>
         </li>
-        <li class="catalog-list__item card">
-          <div class="card-wrapper">
-            <a href=""><img src="https://via.placeholder.com/140x144" class="card-image" width="140" height="144"
-                alt="Показать еще 100500 товаров">
-            </a>
-            <p class="card__name card__name--gray">ПОКАЗАТЬ ЕЩЕ 100500 ТОВАРОВ
-            </p>
+        <li class="catalog__item card">
+          <div class="card__wrapper">
+            <a class="card__link" href="">
+            <span class="card__name card__name--gray">Показать еще 100500 товаров</span>
             <span class="card__description">На самом деле вкусов гораздо больше!</span>
-            <button class="card__view button">Показать все</button>
+            </a>
+            <a class="card__view button">Показать все</a>
           </div>
         </li>
 
@@ -236,22 +230,22 @@
       </a>
     </div>
     <div class="social">
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a href="" class="social-list__link"><img src="https://via.placeholder.com/26x18" class="social-list__svg"
-              width="26" height="18" alt="Кэт Энерджи в ВК">
+      <ul class="social__social-list">
+        <li class="social__item">
+          <a href="" class="social__link"><img src="https://via.placeholder.com/26x18" class="social__svg" width="26"
+              height="18" alt="Кэт Энерджи в ВК">
             <p class="visually-hidden">Кэт Энерджи в ВК</p>
           </a>
         </li>
-        <li class="social-list__item">
-          <a href="" class="social-list__link"><img src="https://via.placeholder.com/26x18" class="social-list__svg"
-              width="26" height="18" alt="Кэт Энерджи в Инстаграме">
+        <li class="social__item">
+          <a href="" class="social__link"><img src="https://via.placeholder.com/26x18" class="social__svg" width="26"
+              height="18" alt="Кэт Энерджи в Инстаграме">
             <p class="visually-hidden">Кэт Энерджи в Инстаграме</p>
           </a>
         </li>
-        <li class="social-list__item">
-          <a href="" class="social-list__link"><img src="https://via.placeholder.com/26x18" class="social-list__svg"
-              width="26" height="18" alt="Кэт Энерджи в Фейсбук">
+        <li class="social__item">
+          <a href="" class="social__link"><img src="https://via.placeholder.com/26x18" class="social__svg" width="26"
+              height="18" alt="Кэт Энерджи в Фейсбук">
             <p class="visually-hidden">Кэт Энерджи в Фейсбуке</p>
           </a>
         </li>
@@ -260,8 +254,7 @@
     <div class="page-footer__copyright copyright">
       <a class="copyright__link" href="htmlacademy.ru"><span class="copyright__text">HTML Academy</span></a>
       <a class="copyright__link" href="htmlacademy.ru">
-        <img class="copyright__img" src="https://via.placeholder.com/27x34" width="27" height="34"
-          alt="HTML Academy">
+        <img class="copyright__img" src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML Academy">
         <span class="visually-hidden">HTML Academy</span>
       </a>
     </div>
