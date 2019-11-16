@@ -1,0 +1,12 @@
+.social__social-list {
+  list-style: none;
+}
+
+.social__svg {
+  fill: $link-color-gray;
+}
+
+.social {
+  border-bottom: 1px solid $button-gray-hover;
+  border-top: 1px solid $button-gray-hover;
+}
