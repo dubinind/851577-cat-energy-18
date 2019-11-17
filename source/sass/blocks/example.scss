@@ -20,6 +20,7 @@
 }
 
 .example__description {
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
 }
@@ -30,4 +31,10 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $font-color-black;
+}
+
+.example__item {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
 }
