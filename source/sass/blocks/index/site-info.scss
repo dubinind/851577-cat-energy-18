@@ -79,7 +79,7 @@
   }
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $desktop) {
   .site-info::before {
     content: "";
     background-image: url("../img/index-background-desktop@1x.jpg");
