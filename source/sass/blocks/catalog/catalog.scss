@@ -1,0 +1,23 @@
+.catalog__list {
+  list-style: none;
+}
+
+.catalog__title {
+  font-size: 36px;
+  line-height: 60px;
+  color: $font-color-black;
+  font-weight: 400;
+}
+
+@media (min-width: $tablet) {
+  .page-catalog__title {
+    font-size: 60px;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 30px;
+  }
+}

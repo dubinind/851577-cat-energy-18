@@ -1,0 +1,30 @@
+.page-footer {
+  background-color: $button-gray;
+  margin: 0;
+  padding: 0;
+}
+
+.page-footer__contacts {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.page-footer__logo-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer__map {
+  display: flex;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet) {
+  .page-footer__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

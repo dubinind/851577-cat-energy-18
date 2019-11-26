@@ -1,0 +1,115 @@
+.example {
+  font-family: "Oswald", "Arial", sans-serif;
+  background-color: $button-gray;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.example__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  color: $font-color-black;
+}
+
+.example__mini-title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $font-color-black;
+  text-align: center;
+  margin: 0;
+}
+
+.example__description {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: none;
+  display: block;
+  width: 85px;
+  padding: 0 5px;
+  background-color: $button-gray;
+  position: absolute;
+  bottom: -20px;
+  text-align: center;
+}
+
+.example__total {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $font-color-black;
+  margin: 20px auto 0 auto;
+}
+
+.example__item {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example__info {
+  position: relative;
+  border: 1px solid #cdcdcd;
+  padding: 20px 15px 25px;
+  border-radius: 3px;
+  width: 125px;
+}
+
+.example__result-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example__filter {
+  display: flex;
+  justify-content: space-around;
+}
+
+.example__slide {
+  display: flex;
+  justify-content: center;
+}
+
+.example__slide--after {
+  display: none;
+}
+
+@media (min-width: $desktop) {
+  .example {
+    font-family: "Oswald", "Arial", sans-serif;
+    background-color: $font-color-light;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .example-background {
+    background-color: $button-gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .example__result-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .example__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .example__total {
+    margin: 50px 0;
+  }
+
+  .example__item {
+    width: 384px;
+  }
+}

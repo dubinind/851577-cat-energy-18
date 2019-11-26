@@ -1,0 +1,231 @@
+.programm__list {
+  list-style: none;
+  display: block;
+}
+
+.programm__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $font-color-black;
+  position: relative;
+  margin: 0;
+  display: inline-block;
+}
+
+.programm__icon {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 24px;
+  left: 22px;
+  border-radius: 50%;
+  background-color: $button-green;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.programm__image--diet {
+  width: 35px;
+  height: 49px;
+  position: absolute;
+  content: "";
+  bottom: 4px;
+  left: 8px;
+}
+
+.programm__image--weight {
+  width: 67px;
+  height: 28px;
+  position: absolute;
+  content: "";
+  bottom: 11px;
+  left: -9px;
+}
+
+.programm__title--diet {
+  padding-left: 125px;
+}
+
+.programm__title--weight {
+  padding-left: 92px;
+}
+
+.programm__item {
+  background-color: $button-gray;
+  padding: 21px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.programm__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $font-color-black;
+  position: relative;
+}
+
+.programm__link::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 11px;
+  left: 90px;
+  top: 8px;
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+  background-repeat: no-repeat;
+}
+
+.programm {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 200px 0 0 0;
+}
+
+.programm__text {
+  font-family: "Arial", sans-serif;
+  border-bottom: 1px solid $border-color-grey;
+}
+
+@media (min-width: $tablet) {
+  .programm__title {
+    font-size: 36px;
+    margin-left: 0;
+    display: inline-block;
+  }
+
+  .programm__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    border: 0;
+    max-width: 372px;
+  }
+
+  .programm__link {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 0 55px;
+    display: block;
+  }
+
+  .programm__link::after {
+    left: 120px;
+    top: 11px;
+  }
+
+  .programm__icon {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    left: 446px;
+    border-radius: 50%;
+    background-color: $button-green;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .programm__image--diet {
+    width: 140px;
+    height: 194px;
+    position: absolute;
+    content: "";
+    bottom: 18px;
+    left: 30px;
+  }
+
+  .programm__image--weight {
+    width: 268px;
+    height: 112px;
+    position: absolute;
+    content: "";
+    bottom: 44px;
+    left: -36px;
+  }
+
+  .programm__item {
+    padding: 91px 285px 80px 53px;
+  }
+
+  .programm__title--diet {
+    padding-left: 0;
+  }
+
+  .programm__title--weight {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .programm {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 400px;
+  }
+
+  .programm__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    position: relative;
+  }
+
+  .programm__link {
+    margin: 38px 0;
+    display: block;
+  }
+
+  .programm__item {
+    padding: 81px 56px;
+    margin: 10px;
+  }
+
+  .programm__icon {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 48px;
+    left: 46px;
+    border-radius: 50%;
+    background-color: $button-green;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .programm__image--diet {
+    width: 70px;
+    height: 97px;
+    position: absolute;
+    content: "";
+    bottom: 9px;
+    left: 14px;
+  }
+
+  .programm__image--weight {
+    width: 133px;
+    height: 56px;
+    position: absolute;
+    content: "";
+    bottom: 22px;
+    left: -18px;
+  }
+
+  .programm__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    border: 0;
+    max-width: 462px;
+  }
+}
