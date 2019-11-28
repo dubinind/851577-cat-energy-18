@@ -33,13 +33,7 @@
     text-align: center;
   }
 
-  .site-list__link--active {
-    font-size: 18px;
-    line-height: 25px;
-    font-weight: 400;
-    color: $font-color-black;
-    display: block;
-    text-align: center;
+  .site-list__item--active {
     border-bottom: 2px solid $button-green;
   }
 }
@@ -61,15 +55,13 @@
     color: $font-color-light;
     display: block;
     text-align: center;
-  }
 
-  .site-list__link--active {
-    font-size: 20px;
-    line-height: 25px;
-    font-weight: 400;
-    color: $font-color-light;
-    display: block;
-    text-align: center;
-    border-bottom: 2px solid $font-color-light;
+    &--black {
+      color: $font-color-black;
+    }
+
+    &--white {
+      border-bottom: 2px solid $font-color-light;
+    }
   }
 }

@@ -4,7 +4,8 @@
 }
 
 .catalog {
-  margin: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .catalog__title {
@@ -26,6 +27,14 @@
   }
 
   .catalog {
-    margin: 0 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog {
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }

@@ -1,12 +1,11 @@
 .example {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   background-color: $button-gray;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .example__title {
-  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
@@ -24,7 +23,7 @@
 }
 
 .example__description {
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-size: 12px;
   line-height: 12px;
   text-transform: none;
@@ -47,7 +46,7 @@
 }
 
 .example__item {
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-size: 14px;
   line-height: 18px;
 }
@@ -62,6 +61,7 @@
 
 .example__result-info {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -80,16 +80,33 @@
   display: none;
 }
 
+.example__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet) {
+  .example {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 @media (min-width: $desktop) {
   .example {
-    font-family: "Oswald", "Arial", sans-serif;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .example__title {
     background-color: $font-color-light;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 
   .example-background {
-    background-color: $button-gray;
+    padding-left: 110px;
+    padding-right: 110px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
