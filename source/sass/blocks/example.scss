@@ -98,12 +98,6 @@
     padding-right: 0;
   }
 
-  .example__title {
-    background-color: $font-color-light;
-    padding-left: 110px;
-    padding-right: 110px;
-  }
-
   .example-background {
     padding-left: 110px;
     padding-right: 110px;
@@ -128,5 +122,15 @@
 
   .example__item {
     width: 384px;
+  }
+
+  .example__title {
+    padding-left: 110px;
+    padding-right: 110px;
+    font-size: 60px;
+  }
+
+  .example__title-wrapper {
+    background-color: $font-color-light;
   }
 }

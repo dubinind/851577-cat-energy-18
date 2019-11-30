@@ -1,5 +1,7 @@
 .page-header {
   margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: $font-color-light;
 }
 
@@ -55,5 +57,7 @@
     z-index: 5;
     padding-right: 110px;
     padding-left: 110px;
+    margin: 0 auto;
+    max-width: 1440px;
   }
 }

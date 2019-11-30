@@ -191,9 +191,10 @@
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 400px;
     padding-left: 110px;
     padding-right: 110px;
+    margin: 400px auto 0 auto;
+    max-width: 1440px;
   }
 
   .programm__title {
