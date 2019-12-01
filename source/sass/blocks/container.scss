@@ -1,6 +1,15 @@
-@media (min-width: $desktop) {
-  .container {
-    max-width: 1440px;
-    margin: 0 auto;
+.container {
+  width: $mobile;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: $tablet;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+    padding: 0 40px;
   }
 }

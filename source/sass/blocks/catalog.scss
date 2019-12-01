@@ -3,11 +3,6 @@
   padding: 0;
 }
 
-.catalog {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .catalog__title {
   font-size: 36px;
   line-height: 60px;
@@ -16,7 +11,7 @@
 }
 
 @media (min-width: $tablet) {
-  .page-catalog__title {
+  .catalog__title {
     font-size: 60px;
   }
 
@@ -25,16 +20,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
-  .catalog {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
 }
 
 @media (min-width: $desktop) {
-  .catalog {
-    padding-left: 110px;
-    padding-right: 110px;
+  .catalog__title {
+    font-size: 60px;
   }
 }

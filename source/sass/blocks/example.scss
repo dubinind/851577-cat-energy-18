@@ -1,8 +1,6 @@
 .example {
   font-family: $oswald;
   background-color: $button-gray;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .example__title {
@@ -85,22 +83,15 @@
   justify-content: space-between;
 }
 
-@media (min-width: $tablet) {
-  .example {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
+// @media (min-width: $tablet) {
+//   .example {
+//     padding-left: 30px;
+//     padding-right: 30px;
+//   }
+// }
 
 @media (min-width: $desktop) {
-  .example {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
   .example-background {
-    padding-left: 110px;
-    padding-right: 110px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

@@ -6,27 +6,15 @@
   color: $font-color-black;
 }
 
-.advantage {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 @media (min-width: $tablet) {
   .advantage__title {
     font-size: 60px;
     line-height: 60px;
-    margin-left: 3px;
-  }
-
-  .advantage {
-    padding-left: 30px;
-    padding-right: 30px;
   }
 }
 
-@media (min-width: $desktop) {
-  .advantage {
-    padding-left: 110px;
-    padding-right: 110px;
-  }
-}
+// @media (min-width: $desktop) {
+//   .advantage {
+//     max-width: 245px;
+//   }
+// }

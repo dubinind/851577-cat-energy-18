@@ -22,6 +22,8 @@
   line-height: 36px;
   font-weight: 400;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .site-info__item {
@@ -41,7 +43,7 @@
   .site-info {
     background-image: none;
     background-color: $font-color-light;
-    padding-left: 120px;
+    padding-left: 90px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -62,6 +64,7 @@
     font-size: 20px;
     line-height: 20px;
     margin: 20px 0;
+    text-align: left;
   }
 
   .site-info__link {
@@ -69,6 +72,8 @@
     z-index: 2;
     font-size: 20px;
     line-height: 20px;
+    padding: 12px 27px;
+    max-width: 245px;
   }
 
   .site-info__img {
@@ -93,11 +98,11 @@
     background-color: #68ab3f;
   }
 
-  .site-info {
-    padding-left: auto;
-  }
-
   .site-info__img {
     left: 600px;
+  }
+
+  .site-info__item {
+    text-align: left;
   }
 }
