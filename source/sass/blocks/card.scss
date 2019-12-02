@@ -13,6 +13,11 @@
   margin-left: auto;
 }
 
+h1 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 .card__order {
   width: 100%;
 }

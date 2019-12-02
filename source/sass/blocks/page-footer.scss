@@ -23,11 +23,9 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  .page-footer__contacts-wrapper {
+    position: relative;
+  }
 }
 
-// @media (min-width: $desktop) {
-//   .page-footer__bottom {
-//     padding-left: 110px;
-//     padding-right: 110px;
-//   }
-// }
