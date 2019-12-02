@@ -1,5 +1,5 @@
 .contacts__invitation {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -7,7 +7,24 @@
 }
 
 .contacts__adress {
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-size: 14px;
   line-height: 20px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $desktop) {
+  .contacts {
+    position: absolute;
+    background-color: $font-color-light;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 404px;
+    left: 400px;
+    z-index: 1;
+  }
 }

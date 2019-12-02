@@ -4,27 +4,26 @@
   background-color: #68ab3f;
   width: 100%;
   height: 305px;
+  background-position: center;
   position: relative;
   color: $font-color-light;
   padding: 0;
-  margin: 0;
+  border-top: 1px solid $button-gray-hover;
 }
 
-.site-info::after {
-  content: "";
+.site-info__img {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 300px;
-  background-repeat: no-repeat;
-  background-image: url("../img/index-can-mobile@1x.png");
+  top: 160px;
+  z-index: 1;
 }
 
 .site-info__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .site-info__item {
@@ -32,4 +31,83 @@
   line-height: 14px;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.site-info__link {
+  margin: 300px auto 0 auto;
+}
+
+@media (min-width: $tablet) {
+  .site-info {
+    background-image: none;
+    background-color: $font-color-light;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 0;
+  }
+
+  .site-info__container {
+    padding-left: 90px;
+    padding-right: 30px;
+    position: relative;
+  }
+
+  .site-info__title {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    color: $font-color-black;
+    text-align: start;
+    margin: 0;
+  }
+
+  .site-info__item {
+    color: $font-color-black;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 20px 0;
+    text-align: left;
+  }
+
+  .site-info__link {
+    margin: 0;
+    z-index: 2;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px 27px;
+    max-width: 245px;
+  }
+
+  .site-info__img {
+    position: absolute;
+    top: 160px;
+    z-index: 1;
+  }
+}
+
+@media (min-width: $desktop) {
+  .site-info::before {
+    content: "";
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 696px;
+    position: absolute;
+    background-position: right;
+    top: -40px;
+    right: 0;
+    background-size: contain;
+    background-color: #68ab3f;
+  }
+
+  .site-info__img {
+    left: 600px;
+  }
+
+  .site-info__item {
+    text-align: left;
+  }
 }

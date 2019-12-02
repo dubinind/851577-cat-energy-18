@@ -6,17 +6,15 @@
   color: $font-color-black;
 }
 
-.advantages__list {
-  list-style: none;
+@media (min-width: $tablet) {
+  .advantage__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
-.advantage {
-  margin: 0;
-  padding: 0;
-}
-
-.advantage-list__item {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-}
+// @media (min-width: $desktop) {
+//   .advantage {
+//     max-width: 245px;
+//   }
+// }
