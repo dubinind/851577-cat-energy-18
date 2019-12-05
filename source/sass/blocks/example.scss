@@ -1,6 +1,9 @@
 .example {
   font-family: $oswald;
   background-color: $button-gray;
+  margin-top: 39px;
+  padding-top: 16px;
+  padding-bottom: 36px;
 }
 
 .example__title {
@@ -26,11 +29,11 @@
   line-height: 12px;
   text-transform: none;
   display: block;
-  width: 85px;
-  padding: 0 5px;
+  width: 91px;
+  padding: 0 18px;
   background-color: $button-gray;
   position: absolute;
-  bottom: -20px;
+  bottom: -27px;
   text-align: center;
 }
 
@@ -40,19 +43,22 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $font-color-black;
-  margin: 20px auto 0 auto;
+  margin: 34px auto;
 }
 
 .example__item {
   font-family: $arial;
   font-size: 14px;
   line-height: 18px;
+  margin-top: 25px;
+  margin-bottom: 26px;
+  width: 266px;
 }
 
 .example__info {
   position: relative;
   border: 1px solid #cdcdcd;
-  padding: 20px 15px 25px;
+  padding: 14px 15px 16px;
   border-radius: 3px;
   width: 125px;
 }

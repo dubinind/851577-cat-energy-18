@@ -2,16 +2,9 @@
   background-color: $font-color-light;
 }
 
-.page-header__button {
-  background-color: transparent;
-  overflow: hidden;
-  position: relative;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
+.page-header__logo {
+  margin-right: 90px;
+  margin-top: 12px;
 }
 
 .page-header__wrapper {
@@ -25,7 +18,13 @@
 @media (min-width: $tablet) {
   .page-header__wrapper {
     position: relative;
-    display: flex;
+    display: block;
+    top: -2px;
+  }
+
+  .page-header__logo {
+    margin-right: 40px;
+    margin-top: 12px;
   }
 
   .page-header {
@@ -34,6 +33,7 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: none;
+    margin-top: 38px;
   }
 }
 
@@ -44,11 +44,6 @@
   }
 
   .page-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: none;
-    z-index: 5;
+    margin-top: 64px;
   }
 }

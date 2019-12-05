@@ -6,6 +6,8 @@
 
 .copyright__img {
   fill: $link-color-gray;
+  height: 32px;
+  width: 27px;
 }
 
 .copyright__text {
@@ -18,4 +20,5 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 }

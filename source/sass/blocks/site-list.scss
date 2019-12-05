@@ -8,6 +8,7 @@
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
+  text-transform: uppercase;
   color: $font-color-black;
   border-bottom: 1px solid $button-gray-hover;
   display: block;
@@ -16,7 +17,7 @@
 
 @media (min-width: $tablet) {
   .site-list {
-    width: 460px;
+    width: 440px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -35,16 +36,19 @@
 
   .site-list__item--active {
     border-bottom: 2px solid $button-green;
+    padding-bottom: 7px;
   }
 }
 
 @media (min-width: $desktop) {
   .site-list {
-    width: 460px;
+    width: 478px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    // margin-top: 10px;
+    // margin-bottom: 10px;
   }
 
   .site-list__link {

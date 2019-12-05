@@ -63,17 +63,19 @@
 }
 
 .programm__title--diet {
-  padding-left: 125px;
+  margin-left: 70px;
+  margin-top: 9px;
 }
 
 .programm__title--weight {
-  padding-left: 92px;
+  margin-left: 71px;
+  margin-top: 10px;
 }
 
 .programm__item {
   background-color: $button-gray;
-  padding: 21px;
-  margin-bottom: 30px;
+  padding: 20px;
+  margin-bottom: 19px;
   position: relative;
 }
 
@@ -92,7 +94,7 @@
   position: absolute;
   width: 24px;
   height: 11px;
-  left: 90px;
+  left: 96px;
   top: 8px;
   background-image: url("../img/icon-right-arrow-verylong.svg");
   background-repeat: no-repeat;
@@ -104,7 +106,10 @@
 
 .programm__text {
   font-family: $arial;
+  padding-bottom: 22px;
   border-bottom: 1px solid $border-color-grey;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet) {

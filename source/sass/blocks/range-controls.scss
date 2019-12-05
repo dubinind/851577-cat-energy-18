@@ -10,7 +10,8 @@
   cursor: pointer;
   display: flex;
   justify-content: space-between;
-  padding: 45px 45px 40px;
+  margin: 32px 39px 0 43px;
+  align-items: center;
 }
 
 .range-controls__before,
@@ -23,7 +24,7 @@
   width: 84px;
   height: 14px;
   border: 1px solid #cdcdcd;
-  margin: 0 20px;
+  margin: 0 18px;
   border-radius: 20px;
   background-color: $font-color-light;
 }

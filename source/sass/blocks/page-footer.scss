@@ -1,18 +1,26 @@
 .page-footer {
-  background-color: $button-gray;
+  // background-color: $button-gray;
   margin: 0;
   padding: 0;
+}
+
+.page-footer__contacts-wrapper {
+  background-color: $font-color-light;
+  margin-top: 13px;
+  margin-bottom: 10px;
 }
 
 .page-footer__logo-title {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 38px;
+  margin-bottom: 28px;
 }
 
 .page-footer__map {
   display: flex;
-  margin: 0 auto;
+  margin: 10px auto 0 auto;
   position: relative;
 }
 

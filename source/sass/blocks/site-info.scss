@@ -9,11 +9,12 @@
   color: $font-color-light;
   padding: 0;
   border-top: 1px solid $button-gray-hover;
+  margin-top: 12px;
 }
 
 .site-info__img {
   position: absolute;
-  top: 160px;
+  top: 167px;
   z-index: 1;
 }
 
@@ -22,7 +23,7 @@
   line-height: 36px;
   font-weight: 400;
   text-align: center;
-  margin: 0;
+  margin-top: 27px;
   padding: 0;
 }
 
@@ -33,10 +34,15 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 150px;
+  margin-top: 26px;
 }
 
 .site-info__link {
-  margin: 300px auto 0 auto;
+  margin: 301px auto 0 auto;
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 11px;
+  padding-bottom: 12px;
 }
 
 @media (min-width: $tablet) {
@@ -97,7 +103,7 @@
     height: 696px;
     position: absolute;
     background-position: right;
-    top: -40px;
+    top: -129px;
     right: 0;
     background-size: contain;
     background-color: #68ab3f;
