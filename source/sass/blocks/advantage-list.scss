@@ -12,6 +12,7 @@
   position: relative;
   margin-bottom: 20px;
   padding-left: 81px;
+  z-index: 5;
 }
 
 .advantage-list__item::before {
@@ -25,6 +26,7 @@
   background-repeat: no-repeat;
   background-color: $button-green;
   background-position: center;
+  z-index: 5;
 }
 
 .advantage-list__item--proper::before {
@@ -54,10 +56,49 @@
     width: 250px;
     font-size: 16px;
     line-height: 24px;
-    margin-right: 100px;
     padding-top: 90px;
     padding-left: 0;
-    margin-bottom: 135px;
+    margin-top: 70px;
+    margin-bottom: 84px;
+    counter-increment: counter;
+
+    &:nth-child(odd) {
+
+      margin-right: 133px;
+    }
+
+    &:nth-child(2) {
+      &::after {
+        left: 112px;
+        top: -62px;
+      }
+    }
+
+    &:nth-child(3) {
+      &::after {
+        left: 113px;
+        top: -61px;
+      }
+    }
+
+    &:nth-child(4) {
+      &::after {
+        left: 114px;
+        top: -61px;
+      }
+    }
+
+    &::after {
+      content: counter(counter);
+      font-family: $oswald;
+      font-size: 281px;
+      line-height: 281px;
+      color: $button-gray;
+      position: absolute;
+      left: 117px;
+      top: -62px;
+      z-index: -1;
+    }
   }
 }
 
@@ -66,6 +107,7 @@
     display: flex;
     justify-content: space-between;
     width: 1220px;
+    margin-bottom: 50px;
   }
 
   .advantage-list__item {
@@ -73,5 +115,18 @@
     font-size: 16px;
     line-height: 24px;
     margin: 0;
+
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+
+    &::after {
+      left: 5px;
+      bottom: -58px;
+    }
+
+    &::before {
+      top: -2px;
+    }
   }
 }

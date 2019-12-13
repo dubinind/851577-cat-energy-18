@@ -20,5 +20,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 21px;
+}
+
+@media (min-width: $tablet) {
+  .copyright__img {
+    margin-left: 24px;
+  }
+
+  .copyright {
+    margin-top: 0;
+  }
 }

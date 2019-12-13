@@ -9,7 +9,6 @@
   color: $font-color-light;
   padding: 0;
   border-top: 1px solid $button-gray-hover;
-  margin-top: 12px;
 }
 
 .site-info__img {
@@ -56,7 +55,7 @@
   }
 
   .site-info__container {
-    padding-left: 90px;
+    padding-left: 87px;
     padding-right: 30px;
     position: relative;
   }
@@ -67,14 +66,14 @@
     font-weight: 400;
     color: $font-color-black;
     text-align: start;
-    margin: 0;
+    margin-top: 49px;
   }
 
   .site-info__item {
     color: $font-color-black;
     font-size: 20px;
     line-height: 20px;
-    margin: 20px 0;
+    margin: 41px 0 48px 1px;
     text-align: left;
   }
 
@@ -83,8 +82,9 @@
     z-index: 2;
     font-size: 20px;
     line-height: 20px;
-    padding: 12px 27px;
+    padding: 16px 27px;
     max-width: 245px;
+    margin-left: 1px;
   }
 
   .site-info__img {
@@ -115,5 +115,20 @@
 
   .site-info__item {
     text-align: left;
+    margin-top: 42px;
+    margin-bottom: 52px;
+  }
+
+  .site-info__title {
+    margin-top: 93px;
+  }
+
+  .site-info__container {
+    padding-left: 80px;
+  }
+
+  .site-info__link {
+    padding: 16px 27px 16px 25px;
+    margin-left: 0;
   }
 }

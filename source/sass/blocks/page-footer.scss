@@ -1,5 +1,4 @@
 .page-footer {
-  // background-color: $button-gray;
   margin: 0;
   padding: 0;
 }
@@ -25,6 +24,14 @@
 }
 
 @media (min-width: $tablet) {
+  .page-footer__map {
+    margin: 41px auto 60px auto;
+  }
+
+  .page-footer__logo-title {
+    margin-right: 24px;
+  }
+
   .page-footer__bottom {
     display: flex;
     flex-direction: row;
@@ -37,3 +44,8 @@
   }
 }
 
+@media (min-width: $desktop) {
+  .page-footer__map {
+    margin: 41px auto 23px auto;
+  }
+}

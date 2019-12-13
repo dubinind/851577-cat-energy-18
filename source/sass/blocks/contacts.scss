@@ -19,14 +19,55 @@
   justify-content: space-between;
 }
 
+@media (min-width: $tablet) {
+  .contacts {
+    margin-top: 0;
+    padding: 0 38px 0 41px;
+  }
+
+  .contacts__invitation {
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 16px;
+  }
+
+  .contacts__adress {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 14px;
+    text-align: right;
+  }
+
+  .contacts__town {
+    display: block;
+    margin-top: 20px;
+  }
+}
+
 @media (min-width: $desktop) {
   .contacts {
     position: absolute;
     background-color: $font-color-light;
     flex-direction: row;
     justify-content: space-around;
-    width: 404px;
-    left: 400px;
+    width: 570px;
+    top: 53px;
+    left: 40px;
     z-index: 1;
+    padding: 65px 89px 65px 75px;
+  }
+
+  .contacts__invitation {
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0 95px 0 0;
+    text-align: left;
+  }
+
+  .contacts__adress {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    text-align: left;
   }
 }
