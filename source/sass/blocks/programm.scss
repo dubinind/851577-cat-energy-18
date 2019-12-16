@@ -77,6 +77,10 @@
   padding: 20px;
   margin-bottom: 19px;
   position: relative;
+
+  &:last-child {
+    margin-bottom: 18px;
+  }
 }
 
 .programm__link {

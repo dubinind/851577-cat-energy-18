@@ -71,8 +71,8 @@
 }
 
 .example__filter {
-  display: flex;
-  justify-content: space-around;
+  width: $mobile;
+  padding: 0 20px;
 }
 
 .example__slide {
@@ -133,6 +133,11 @@
     margin-top: 27px;
   }
 
+  .example__filter {
+    width: $tablet;
+    padding: 0 30px;
+  }
+
   .example {
     background-color: $font-color-light;
     margin-top: 19px;
@@ -145,6 +150,11 @@
     width: 677px;
     margin-top: 63px;
     margin-bottom: 54px;
+  }
+
+  .example__filter {
+    width: auto;
+    padding: 0;
   }
 
   .example__result-info {

@@ -214,6 +214,8 @@ h1 {
     background-color: $font-color-light;
     border: 1px solid $button-gray-hover;
     padding-top: 0;
+    padding-left: 35px;
+    padding-right: 35px;
 
     &::before {
       width: 60px;
@@ -222,6 +224,10 @@ h1 {
       left: 92px;
       background-image: url("../img/icon-plus.svg");
     }
+  }
+
+  .card__description {
+    line-height: 17px;
   }
 
   .card .card__view {

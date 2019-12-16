@@ -10,7 +10,9 @@
   cursor: pointer;
   display: flex;
   justify-content: space-between;
-  margin: 32px 39px 0 43px;
+  margin-top: 32px;
+  padding-left: 63px;
+  padding-right: 59px;
   align-items: center;
 }
 
@@ -43,7 +45,10 @@
 
 @media (min-width: $tablet) {
   .range-controls {
-    margin: 29px 99px;
+    margin-top: 29px;
+    margin-bottom: 29px;
+    padding-left: 99px;
+    padding-right: 99px;
   }
 
   .range-controls__before,
@@ -81,11 +86,13 @@
 @media (min-width: $desktop) {
   .range-controls {
     margin: 30px 41px 0 44px;
+    padding: 0;
   }
 
   .range-controls__before,
   .range-controls__after {
     border-bottom: 1px dotted #bebebe;
+    margin-top: 6px;
   }
 
   .range-controls__scale {
