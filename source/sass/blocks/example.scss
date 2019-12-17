@@ -51,7 +51,7 @@
   font-size: 14px;
   line-height: 18px;
   margin-top: 25px;
-  margin-bottom: 26px;
+  margin-bottom: 24px;
   width: 266px;
 }
 
@@ -73,6 +73,7 @@
 .example__filter {
   width: $mobile;
   padding: 0 20px;
+  margin: 0 auto;
 }
 
 .example__slide {
@@ -152,10 +153,10 @@
     margin-bottom: 54px;
   }
 
-  .example__filter {
-    width: auto;
-    padding: 0;
-  }
+  // .example__filter {
+  //   width: auto;
+  //   padding: 0;
+  // }
 
   .example__result-info {
     display: flex;
@@ -264,5 +265,10 @@
 
   .example__description {
     background-color: $button-gray;
+  }
+
+  .example__filter {
+    width: 570px;
+    padding: 0;
   }
 }

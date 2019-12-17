@@ -11,7 +11,8 @@
 
   &--gray {
     width: 100%;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+    margin-top: 18px;
   }
 }
 
@@ -106,11 +107,18 @@ h1 {
   }
 
   .card__table-name,
-  .card__description,
   .card__table-value {
     font-family: "Arial", sans-serif;
     font-size: 16px;
     line-height: 16px;
+  }
+
+  .card__description {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    width: 167px;
+    margin: 0 auto;
   }
 
   .card__table {
@@ -152,11 +160,6 @@ h1 {
     }
   }
 
-  .card__description {
-    width: 167px;
-    margin: 0 auto;
-  }
-
   .card__wrapper {
     display: flex;
     flex-direction: column;
@@ -173,7 +176,7 @@ h1 {
   .card .card__view {
     width: 249px;
     margin: 0 auto;
-    margin-top: 91px;
+    margin-top: 85px;
   }
 }
 
@@ -224,10 +227,6 @@ h1 {
       left: 92px;
       background-image: url("../img/icon-plus.svg");
     }
-  }
-
-  .card__description {
-    line-height: 17px;
   }
 
   .card .card__view {
