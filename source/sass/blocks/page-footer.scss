@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+.page-footer__bottom {
+  background-color: $button-gray;
+  padding-top: 38px;
+  padding-bottom: 10px;
+}
+
 .page-footer__contacts-wrapper {
   background-color: $font-color-light;
   margin-top: 13px;
@@ -13,7 +19,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 38px;
   margin-bottom: 28px;
 }
 
@@ -45,7 +50,12 @@
 }
 
 @media (min-width: $desktop) {
+  .page-footer {
+    background-color: $button-gray;
+    padding-top: 41px;
+  }
+
   .page-footer__map {
-    margin: 41px auto 23px auto;
+    margin: 0 auto 23px auto;
   }
 }
