@@ -3,41 +3,46 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header container">
     <div class="page-header__wrapper">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38"
           alt="Логотип Кэт энерджи">
       </a>
-      <button class="page-header__button" type="button"><span class="visually-hidden">Показать меню</span>
-        <img class="page-header__bitton-image" src="img/icon-mobile-menu.svg" width="24" height="18" alt="Кнопка меню"></button>
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Показать меню</span>
+        </button>
+
       <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="main-nav__link" href="index.html">Главная</a>
+        <li class="site-list__item ">
+          <a class="site-list__link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          <a class="site-list__link" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="site-list__item">
-          <a class="main-nav__link" href="#">Подбор программы</a>
+        <li class="site-list__item site-list__item--active">
+          <a class="site-list__link site-list__link--white" >Подбор программы</a>
         </li>
       </ul>
     </nav>
   </header>
   <footer class="page-footer">
+    <div class="container page-footer__contacts-wrapper">
       <div class="page-footer__contacts contacts">
-        <p class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8
+        <p class="contacts__invitation">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
+        <p class="contacts__adress">ул. Большая<br> Конюшенная, д. 19/8<br>
           Санкт-Петербург</p>
       </div>
-      <img src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта">
+    </div>
+    <img class="page-footer__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта">
+    <div class="page-footer__bottom container">
       <div class="page-footer__logo-title"><a class="page-footer__link" href="index.html">
           <img class="page-footer__title-image" src="img/logo-footer.svg" width="128" height="24"
             alt="Логотип Кэт энерджи">
@@ -61,16 +66,17 @@
                 c-1.4,2.1-2,2.4-2.5,2.4c-0.1,0-0.3,0-0.4-0.1c-0.7-0.4-0.7-1.4-0.7-2.1V3.9V2.6c0.1-1.3,0-1.3-0.3-1.4c-0.3-0.1-0.5-0.1-1.4-0.1H10
                 c-0.5,0-1,0-1.4,0.1l0.2,0.2c0.4,0.5,0.4,1.5,0.4,1.7c0.1,1.3,0,2.9-0.7,3.3c-0.1,0-0.2,0.1-0.4,0.1C7.5,6.5,6.8,5.8,5.6,4
                 C5,2.9,4.5,1.8,4.5,1.8s0-0.1-0.1-0.1S4.2,1.6,4.2,1.6H1.3H1.2c0.4,0.9,2.5,5,4.8,7.2c2,1.9,4.3,2,4.7,2h1.4c0,0,0.2,0,0.2-0.1v-0.1
-                c0-0.2,0-2,1.2-2.3C13.5,8.3,13.7,8.3,13.7,8.3z"/>
+                c0-0.2,0-2,1.2-2.3C13.5,8.3,13.7,8.3,13.7,8.3z" />
               </svg>
               <span class="visually-hidden">Кэт Энерджи в ВК</span>
             </a>
           </li>
           <li class="social__item">
             <a href="" class="social__link"><svg version="1.1" class="social__svg" width="26" height="18"
-                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                y="0px" viewBox="0 0 16.1 16" style="enable-background: new 0 0 16.1 16;" xml:space="preserve">
-                <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 16.1 16" style="enable-background: new 0 0 16.1 16;" xml:space="preserve">
+                <path class="st0"
+                  d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
             M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0z" />
                 <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1S9.7,11.1,8,11.1S4.9,9.7,4.9,8S6.3,4.9,8,4.9 M8,3.9C5.7,3.9,3.9,5.7,3.9,8
             s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z" />
@@ -81,8 +87,8 @@
           </li>
           <li class="social__item">
             <a href="" class="social__link"><svg version="1.1" class="social__svg" width="26" height="18"
-                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                y="0px" viewBox="0 0 10 19" style="enable-background: new 0 0 10 19;" xml:space="preserve">
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 10 19" style="enable-background: new 0 0 10 19;" xml:space="preserve">
                 <path d="M7.1,19H2v-8.8H0V5.8h1.9C1.8,3.8,2.1,2.4,3,1.4C3.8,0.5,5,0.1,6.5,0H10v4.2H7.2C7.1,4.4,7,5,7,5.8h3v4.4H7.1V19z M3.1,18
             h2.8V9.1h2.9V6.8H5.9V6.3c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6H1.1v2.3h2V18
             z" />
@@ -102,7 +108,24 @@
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+  <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
 
-  </html>
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
+</body>
+
+</html>

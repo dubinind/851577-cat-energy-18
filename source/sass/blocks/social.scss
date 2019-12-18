@@ -3,14 +3,34 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0;
+  padding: 9px 58px 4px 57px;
 }
 
 .social__svg {
   fill: $link-color-gray;
+
+  &:hover {
+    fill: $button-green;
+  }
+
+  &:active {
+    fill: $button-green;
+    opacity: 0.3;
+  }
 }
 
 .social {
   border-bottom: 1px solid $button-gray-hover;
   border-top: 1px solid $button-gray-hover;
+}
+
+@media (min-width: $tablet) {
+  .social__social-list {
+    width: 140px;
+    padding: 0;
+  }
+
+  .social {
+    border: none;
+  }
 }

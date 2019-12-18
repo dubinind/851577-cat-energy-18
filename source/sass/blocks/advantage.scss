@@ -4,17 +4,26 @@
   font-weight: 400;
   line-height: 60px;
   color: $font-color-black;
+  margin-top: 0;
+  margin-bottom: 31px;
 }
 
 @media (min-width: $tablet) {
   .advantage__title {
     font-size: 60px;
     line-height: 60px;
+    margin-top: 46px;
+    margin-bottom: 24px;
+  }
+
+  .advantage-pre {
+    white-space: pre;
   }
 }
 
-// @media (min-width: $desktop) {
-//   .advantage {
-//     max-width: 245px;
-//   }
-// }
+@media (min-width: $desktop) {
+  .advantage__title {
+    margin-top: 43px;
+    margin-bottom: 93px;
+  }
+}

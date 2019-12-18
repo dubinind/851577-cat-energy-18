@@ -8,6 +8,7 @@
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
+  text-transform: uppercase;
   color: $font-color-black;
   border-bottom: 1px solid $button-gray-hover;
   display: block;
@@ -16,7 +17,7 @@
 
 @media (min-width: $tablet) {
   .site-list {
-    width: 460px;
+    width: 440px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -31,16 +32,21 @@
     color: $font-color-black;
     display: block;
     text-align: center;
-  }
 
-  .site-list__item--active {
-    border-bottom: 2px solid $button-green;
+    &--active {
+      border-bottom: 2px solid $button-green;
+      padding-bottom: 7px;
+    }
   }
 }
 
 @media (min-width: $desktop) {
+  .site-list__item--active .site-list__link--active {
+    border-bottom: 2px solid $button-green;
+  }
+
   .site-list {
-    width: 460px;
+    width: 478px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -49,12 +55,7 @@
 
   .site-list__link {
     font-size: 20px;
-    line-height: 25px;
-    font-weight: 400;
-    border-bottom: none;
     color: $font-color-light;
-    display: block;
-    text-align: center;
 
     &--black {
       color: $font-color-black;
@@ -62,6 +63,11 @@
 
     &--white {
       border-bottom: 2px solid $font-color-light;
+    }
+
+    &--active {
+      border-bottom: 2px solid $font-color-light;
+      padding-bottom: 8px;
     }
   }
 }

@@ -10,7 +10,10 @@
   cursor: pointer;
   display: flex;
   justify-content: space-between;
-  padding: 45px 45px 40px;
+  margin-top: 32px;
+  padding-left: 63px;
+  padding-right: 59px;
+  align-items: center;
 }
 
 .range-controls__before,
@@ -23,7 +26,7 @@
   width: 84px;
   height: 14px;
   border: 1px solid #cdcdcd;
-  margin: 0 20px;
+  margin: 0 18px;
   border-radius: 20px;
   background-color: $font-color-light;
 }
@@ -40,10 +43,21 @@
   display: none;
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $tablet) {
+  .range-controls {
+    margin-top: 29px;
+    margin-bottom: 29px;
+    padding-left: 99px;
+    padding-right: 99px;
+  }
+
   .range-controls__before,
   .range-controls__after {
+    font-size: 20px;
+    line-height: 20px;
     border-bottom: 1px dotted #bebebe;
+    padding-bottom: 6px;
+    margin-top: 3px;
   }
 
   .range-controls__scale {
@@ -65,7 +79,42 @@
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
     position: absolute;
     top: -15px;
-    left: 215px;
+    left: 196px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .range-controls {
+    margin: 30px 41px 0 44px;
+    padding: 0;
+  }
+
+  .range-controls__before,
+  .range-controls__after {
+    border-bottom: 1px dotted #bebebe;
+    margin-top: 6px;
+  }
+
+  .range-controls__scale {
+    width: 430px;
+    height: 6px;
+    margin: 0 20px;
+    border-radius: 20px;
+    background-color: #dcdcdc;
+    position: relative;
+  }
+
+  .range-controls__bar {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: block;
+    background-color: $button-green;
+    border: 12px solid $font-color-light;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: -17px;
+    left: 195px;
   }
 }
 
