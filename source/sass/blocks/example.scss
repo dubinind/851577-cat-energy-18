@@ -96,9 +96,11 @@
     width: 50%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 
     &--after {
       align-items: flex-end;
+      z-index: 1;
     }
   }
 
@@ -230,12 +232,12 @@
 
   .example__img {
     &--before {
-      width: 365px;
+      width: 690px;
       height: 499px;
     }
 
     &--after {
-      width: 271px;
+      width: 690px;
       height: 517px;
     }
   }
@@ -288,7 +290,8 @@
 
   .example__sliders {
     position: absolute;
-    left: 646px;
+    left: 610px;
+    top: -169px;
   }
 
   .example__image {
