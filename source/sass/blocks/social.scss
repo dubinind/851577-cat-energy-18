@@ -26,11 +26,29 @@
 
 @media (min-width: $tablet) {
   .social__social-list {
-    width: 140px;
+    width: 154px;
     padding: 0;
   }
 
   .social {
     border: none;
+    margin-top: -10px;
+  }
+
+  .social__svg {
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--inst {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
   }
 }

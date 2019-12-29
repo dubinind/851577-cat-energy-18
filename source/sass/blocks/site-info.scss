@@ -9,7 +9,13 @@
   color: $font-color-light;
   padding: 0;
   border-top: 1px solid $button-gray-hover;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 305px 320px;
+  }
 }
+
 
 .site-info__img {
   position: absolute;
@@ -66,7 +72,7 @@
     font-weight: 400;
     color: $font-color-black;
     text-align: start;
-    margin-top: 49px;
+    margin-top: 37px;
   }
 
   .site-info__item {
@@ -85,12 +91,16 @@
     padding: 16px 27px;
     max-width: 245px;
     margin-left: 1px;
+    position: absolute;
   }
 
   .site-info__img {
     position: absolute;
     top: 160px;
+    left: 0;
     z-index: 1;
+    width: 709px;
+    height: 609px;
   }
 }
 
@@ -103,14 +113,22 @@
     height: 696px;
     position: absolute;
     background-position: right;
-    top: -129px;
+    top: -136px;
     right: 0;
     background-size: contain;
     background-color: #68ab3f;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 696px 720px;
+    }
   }
 
   .site-info__img {
-    left: 600px;
+    left: 450px;
+    width: 552px;
+    height: 499px;
+    top: -80px;
   }
 
   .site-info__item {
@@ -120,7 +138,7 @@
   }
 
   .site-info__title {
-    margin-top: 93px;
+    margin-top: 86px;
   }
 
   .site-info__container {

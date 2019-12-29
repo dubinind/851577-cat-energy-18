@@ -178,9 +178,41 @@ h1 {
     margin: 0 auto;
     margin-top: 85px;
   }
+
+  .card__image {
+    position: absolute;
+    left: 0;
+    bottom: 303px;
+
+    &--small {
+      width: 324px;
+      height: 174px;
+    }
+
+    &--big {
+      width: 324px;
+      height: 208px;
+    }
+  }
 }
 
 @media (min-width: $desktop) {
+  .card__image {
+    position: absolute;
+    left: 0;
+    bottom: 303px;
+
+    &--small {
+      width: 245px;
+      height: 172px;
+    }
+
+    &--big {
+      width: 245px;
+      height: 208px;
+    }
+  }
+
   .card__wrapper {
     display: flex;
     flex-direction: column;

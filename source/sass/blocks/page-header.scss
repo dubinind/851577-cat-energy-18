@@ -29,13 +29,18 @@
     margin-top: 12px;
   }
 
+  .page-header__logo-image {
+    width: 174px;
+    height: 59px;
+  }
+
   .page-header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     border-bottom: none;
-    margin-top: 32px;
+    margin-top: 26px;
     margin-bottom: 6px;
   }
 }
@@ -47,6 +52,11 @@
   }
 
   .page-header {
-    margin-top: 56px;
+    margin-top: 42px;
+  }
+
+  .page-header__logo-image {
+    width: 203px;
+    height: 60px;
   }
 }
