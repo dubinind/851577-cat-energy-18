@@ -3,8 +3,11 @@
   padding: 0;
 }
 
-.page-footer__bottom {
+.page-footer__cont {
   background-color: $button-gray;
+}
+
+.page-footer__bottom {
   padding-top: 38px;
   padding-bottom: 10px;
 }
@@ -30,7 +33,9 @@
 
 @media (min-width: $tablet) {
   .page-footer__map {
-    margin: 41px auto 60px auto;
+    margin: 41px auto 0 auto;
+    width: 767px;
+    height: 400px;
   }
 
   .page-footer__logo-title {
@@ -47,15 +52,29 @@
   .page-footer__contacts-wrapper {
     position: relative;
   }
+
+  .page-footer__link {
+    margin-top: 21px;
+  }
 }
 
 @media (min-width: $desktop) {
   .page-footer {
     background-color: $button-gray;
-    padding-top: 41px;
   }
 
   .page-footer__map {
     margin: 0 auto 23px auto;
+    width: 1440px;
+    height: 400px;
+  }
+
+  .page-footer__contacts-wrapper {
+    margin: 0;
+  }
+
+  .page-footer__bottom {
+    padding-top: 19px;
+    padding-bottom: 28px;
   }
 }
