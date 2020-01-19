@@ -35,13 +35,13 @@
   }
 
   .page-header {
+    width: $tablet;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     border-bottom: none;
-    margin-top: 26px;
-    margin-bottom: 6px;
+    margin: 22px auto 6px auto;
   }
 }
 
@@ -49,10 +49,12 @@
   .page-header__wrapper {
     position: relative;
     display: flex;
+    justify-content: flex-start;
   }
 
   .page-header {
     margin-top: 42px;
+    width: $desktop;
   }
 
   .page-header__logo-image {

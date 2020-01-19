@@ -1,0 +1,104 @@
+.present {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 46px;
+  height: 290px;
+
+  &::before {
+    content: "";
+    background-color: $font-color-light;
+    background-image: url("../img/gift-photo-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 290px;
+    background-position: center top;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-mobile@2x.jpg");
+      background-size: 280px 290px;
+    }
+  }
+
+  &::after {
+    content: "";
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    width: 55px;
+    height: 60px;
+    background-position: center top;
+    position: absolute;
+    top: 65px;
+    left: 113px;
+  }
+}
+
+.present__description {
+  font-family: $arial;
+  line-height: 1.25;
+  font-size: 16px;
+  color: $font-color-light;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  width: 165px;
+  left: 56px;
+  top: 172px;
+}
+
+@media (min-width: $tablet) {
+  .present {
+    height: 200px;
+    width: 710px;
+    margin: auto;
+    margin-bottom: 60px;
+
+    &::before {
+      background-image: url("../img/gift-photo-tablet@1x.jpg");
+      height: 200px;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/gift-photo-tablet@2x.jpg");
+      }
+    }
+
+    &::after {
+      top: 65px;
+      left: 120px;
+    }
+  }
+
+  .present__description {
+    text-align: left;
+    right: 100px;
+    left: initial;
+    bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .present {
+    margin-bottom: auto;
+
+    &::before {
+      background-image: url("../img/gift-photo-desktop@1x.jpg");
+      height: 290px;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/gift-photo-desktop@2x.jpg");
+      }
+    }
+
+    &::after {
+      top: 55px;
+      left: 170px;
+    }
+  }
+
+  .present__description {
+    text-align: center;
+    bottom: -70px;
+  }
+}

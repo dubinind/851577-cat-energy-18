@@ -142,7 +142,7 @@ h1 {
     width: 324px;
     background-color: $button-gray;
     position: relative;
-    margin-bottom: 140px;
+    margin-top: 141px;
     border: none;
   }
 
@@ -213,6 +213,10 @@ h1 {
     }
   }
 
+  .card__100500 {
+    margin-top: 143px;
+  }
+
   .card__wrapper {
     display: flex;
     flex-direction: column;
@@ -226,7 +230,8 @@ h1 {
 
   .card {
     width: 245px;
-    margin-bottom: 143px;
+    margin-top: 143px;
+    margin-bottom: 0;
   }
 
   .card__order {
@@ -265,5 +270,9 @@ h1 {
     width: 170px;
     margin: 0 auto;
     margin-top: 63px;
+
+    &--bonus {
+      margin-top: 206px;
+    }
   }
 }

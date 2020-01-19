@@ -1,0 +1,29 @@
+.program-select__title {
+  font-size: 36px;
+  line-height: 1.67;
+  font-weight: 400;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.program-select__description {
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+@media (min-width: $tablet) {
+  .program-select__title {
+    font-size: 60px;
+    line-height: 1;
+    margin-top: 44px;
+  }
+
+  .program-select__description {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-left: 40px;
+    margin-top: 54px;
+  }
+}

@@ -76,7 +76,7 @@
   margin: 0 auto;
 }
 
-.example__slide {
+.example__sliders {
   display: flex;
   justify-content: center;
 }
@@ -92,32 +92,53 @@
 
 @media (min-width: $tablet) {
   .example__slide {
-    margin-left: 12px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+    &--before {
+      width: 50%;
+      position: relative;
+      z-index: 10;
+      overflow: hidden;
+      background: linear-gradient(to bottom, #ffffff 50%, #f2f2f2 50%);
+    }
 
     &--after {
-      align-items: flex-end;
-      z-index: 1;
+      position: absolute;
+      // z-index: 1;
+      display: block;
+      background: linear-gradient(to bottom, #ffffff 50%, #eaeaea 50%);
+    }
+  }
+
+  .example__img {
+    padding-left: 7px;
+    margin-bottom: 100px;
+
+    &--before {
+      width: 690px;
+      height: 517px;
+    }
+
+    &--after {
+      width: 690px;
+      height: 517px;
     }
   }
 
   .example__sliders {
-    position: absolute;
+    // overflow: hidden;
+    justify-content: flex-start;
     width: 690px;
     height: 517px;
-    top: -170px;
-    left: 0;
-    right: 0;
+    margin: 0 auto;
+    position: relative;
+    top: -169px;
   }
 
   .example__image {
-    margin-top: 256px;
-    background-color: $button-gray;
-    height: 462px;
-    position: relative;
+    margin-top: 255px;
+    // background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    // height: 462px;
+    // position: relative;
+    // display: block;
   }
 
   .example__cost {
@@ -185,18 +206,6 @@
     margin: 0;
   }
 
-  .example__img {
-    &--before {
-      width: 690px;
-      height: 517px;
-    }
-
-    &--after {
-      width: 690px;
-      height: 517px;
-      z-index: 1;
-    }
-  }
 
   .example__description {
     background-color: $font-color-light;
@@ -233,7 +242,7 @@
   .example__img {
     &--before {
       width: 690px;
-      height: 499px;
+      height: 517px;
     }
 
     &--after {
@@ -291,7 +300,7 @@
   .example__sliders {
     position: absolute;
     left: 610px;
-    top: -169px;
+    top: -188px;
   }
 
   .example__image {
