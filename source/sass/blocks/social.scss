@@ -6,7 +6,8 @@
   padding: 9px 58px 4px 57px;
 }
 
-.social__svg {
+.social__svg,
+.social__svg > .st0 {
   fill: $link-color-gray;
 
   &:hover {

@@ -17,12 +17,18 @@
 .contacts {
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  // top: -76px;
+
+  &__gray {
+    background-color: $button-gray;
+  }
 }
 
 @media (min-width: $tablet) {
   .contacts {
     margin-top: 0;
-    padding: 0 38px 0 41px;
+    padding: 0 67px 0 70px;
   }
 
   .contacts__gray {

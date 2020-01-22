@@ -46,14 +46,15 @@
 @media (min-width: $tablet) {
   .range-controls {
     width: 570px;
-    margin-top: 13px;
-    margin-bottom: 29px;
+    margin-top: -153px;
+    margin-bottom: 69px;
     padding-left: 0;
     padding-right: 0;
   }
 
   .range-controls__before,
   .range-controls__after {
+    z-index: 21;
     font-size: 20px;
     line-height: 20px;
     border-bottom: 1px dotted #bebebe;
@@ -62,6 +63,7 @@
   }
 
   .range-controls__scale {
+    z-index: 21;
     width: 428px;
     height: 6px;
     margin: 0 20px;
@@ -71,6 +73,7 @@
   }
 
   .range-controls__bar {
+    z-index: 21;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -86,7 +89,7 @@
 
 @media (min-width: $desktop) {
   .range-controls {
-    margin: 30px 41px 0 80px;
+    margin: 107px 41px 0 80px;
     padding: 0;
   }
 

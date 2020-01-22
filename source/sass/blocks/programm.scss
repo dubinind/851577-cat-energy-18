@@ -223,6 +223,10 @@
   .programm__item {
     padding: 68px 283px 61px 53px;
     margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

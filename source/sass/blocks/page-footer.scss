@@ -1,7 +1,7 @@
 .page-footer {
   margin: 0;
   padding: 0;
-  position: relative;
+  // position: relative;
 }
 
 .page-footer__cont {
@@ -14,9 +14,17 @@
 }
 
 .page-footer__contacts-wrapper {
-  margin-top: 13px;
-  margin-bottom: 10px;
+  margin: 0 auto;
+  height: 114px;
   z-index: 5;
+  width: $mobile;
+  position: relative;
+  padding-top: 12px;
+  background-color: $font-color-light;
+
+  &--gray {
+    background-color: $button-gray;
+  }
 }
 
 .page-footer__logo-title {
@@ -26,39 +34,58 @@
   margin-bottom: 28px;
 }
 
-.page-footer__map {
-  display: flex;
-  margin: 75px auto 0 auto;
-  position: absolute;
+.page-footer__map-img {
+  margin: 0 auto;
+}
 
-  &--catalog {
-    margin: 110px auto 0 auto;
-  }
+.page-footer__map {
+  position: relative;
+  // margin-top: 75px;
+  width: 320px;
+  margin: 0 auto;
+  height: 400px;
+  background-image: url("../img/bg-map-mobile@1x.png");
 
   &::after {
     content: "";
     position: absolute;
-    width: 53px;
+    object-fit: contain;
+    width: 55px;
     height: 55px;
     background-repeat: no-repeat;
     background-image: url("../../img/map-pin.png");
-    background-size: 53px 55px;
-    top: 50px;
-    left: 50px;
+    background-size: 55px 55px;
+    top: 176px;
+    left: 131px;
     z-index: 4;
   }
 }
 
 @media (min-width: $tablet) {
   .page-footer__map {
-    margin: 160px auto 0 auto;
-    width: 767px;
+    margin: -2px auto -1px auto;
+    width: 768px;
     height: 400px;
+    background-image: url("../../img/bg-map-tablet@1x.png");
+
+    &::after {
+      width: 113px;
+      height: 106px;
+      background-size: 113px 106px;
+      top: 150px;
+      left: 327px;
+    }
   }
 
   .page-footer__contacts-wrapper {
-    top: -160px;
     padding-bottom: 40px;
+    padding-top: 49px;
+    margin-top: 2px;
+    width: $tablet;
+
+    &--index {
+      padding-top: 12px;
+    }
   }
 
   .page-footer__logo-title {
@@ -73,7 +100,7 @@
   }
 
   .page-footer__link {
-    margin-top: 21px;
+    margin-top: 26px;
   }
 }
 
@@ -86,6 +113,7 @@
     margin: 0 auto 23px auto;
     width: 1440px;
     height: 400px;
+    background-image: url("../../img/bg-map-desktop@1x.png");
   }
 
   .page-footer__contacts-wrapper {

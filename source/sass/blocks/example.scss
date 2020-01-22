@@ -4,6 +4,7 @@
   margin-top: 39px;
   padding-top: 16px;
   padding-bottom: 36px;
+  // margin-bottom: 76px;
 }
 
 .example__title {
@@ -92,24 +93,24 @@
 
 @media (min-width: $tablet) {
   .example__slide {
+    height: 650px;
+    background: linear-gradient(to bottom, #ffffff 26%, transparent 0);
+
     &--before {
       width: 50%;
       position: relative;
       z-index: 10;
       overflow: hidden;
-      background: linear-gradient(to bottom, #ffffff 50%, #f2f2f2 50%);
     }
 
     &--after {
       position: absolute;
-      // z-index: 1;
       display: block;
-      background: linear-gradient(to bottom, #ffffff 50%, #eaeaea 50%);
     }
   }
 
   .example__img {
-    padding-left: 7px;
+    padding-left: 15px;
     margin-bottom: 100px;
 
     &--before {
@@ -120,11 +121,11 @@
     &--after {
       width: 690px;
       height: 517px;
+      z-index: 10;
     }
   }
 
   .example__sliders {
-    // overflow: hidden;
     justify-content: flex-start;
     width: 690px;
     height: 517px;
@@ -135,10 +136,20 @@
 
   .example__image {
     margin-top: 255px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 462px;
+      background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+      top: 0;
+      left: 0;
+    }
+
     // background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
-    // height: 462px;
-    // position: relative;
-    // display: block;
   }
 
   .example__cost {
@@ -240,6 +251,8 @@
   }
 
   .example__img {
+    padding-left: 0;
+
     &--before {
       width: 690px;
       height: 517px;

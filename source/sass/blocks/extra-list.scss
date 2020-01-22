@@ -101,19 +101,16 @@
 
   .extra-list__info {
     display: flex;
-    margin-bottom: 26px;
+    margin-bottom: 22px;
   }
 
   .extra-list__info tbody {
     margin-top: 5px;
   }
 
-  .extra-list__value {
-    width: 200px;
-  }
-
-  .extra-list__field {
-    width: 80px;
+  .extra-list__tr {
+    display: flex;
+    justify-content: flex-end;
   }
 
   .extra-list__wrapper-up {
@@ -121,6 +118,7 @@
     padding-left: 38px;
     padding-right: 37px;
     padding-top: 25px;
+    padding-bottom: 8px;
   }
 
   .extra-list__button {
@@ -132,6 +130,10 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+  }
+
+  .extra-list__field {
+    width: 94px;
   }
 
   .extra-list__name {

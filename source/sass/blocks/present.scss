@@ -51,13 +51,14 @@
 @media (min-width: $tablet) {
   .present {
     height: 200px;
-    width: 710px;
-    margin: auto;
-    margin-bottom: 60px;
+    width: 708px;
+    margin: 70px auto 76px auto;
 
     &::before {
       background-image: url("../img/gift-photo-tablet@1x.jpg");
       height: 200px;
+      width: 708px;
+      background-size: 708px 200px;
 
       @media (min-resolution: $retina-dppx) {
         background-image: url("../img/gift-photo-tablet@2x.jpg");
@@ -66,15 +67,14 @@
 
     &::after {
       top: 65px;
-      left: 120px;
+      left: 91px;
     }
   }
 
   .present__description {
+    left: 423px;
+    top: 56px;
     text-align: left;
-    right: 100px;
-    left: initial;
-    bottom: 50px;
   }
 }
 

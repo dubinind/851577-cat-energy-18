@@ -40,7 +40,7 @@
     </nav>
   </header>
   <main class="page-main">
-    <div class="container__catalog">
+    <div class="container container__catalog">
     <div class="page-main__catalog catalog">
       <h1 class="catalog__title">Каталог продукции</h1>
       <ul class="catalog__list ">
@@ -281,8 +281,8 @@
             <a class="card__order button">Заказать</a>
           </div>
         </li>
-        <li class="catalog__item card card-bonus container">
-          <div class="container__card--gray">
+        <li class="catalog__item card card__bonus container">
+          <div class="container__card container__card--gray">
             <a class="card__link" href="">
               <div class="card__content card__100500">
                 <h3 class="card__name card__name--gray">Показать еще 100500 товаров</h3>
@@ -291,13 +291,13 @@
           <a class="card__view card__view--bonus button" href="">Показать все</a>
     </li></ul></div>
     </div>
-    <div class= "page-catalog__bonus container">
+    <div class= "page-catalog page-catalog__bonus container">
       <div class="page-catalog__extra extra-list">
         <h2 class="extra-list__title">Дополнительные товары</h2>
         <div class="extra-list__wrapper-up">
           <table class="extra-list__info ">
             <caption class="extra-list__name">Сахарозаменитель</caption>
-            <tr>
+            <tr class="extra-list__tr">
               <th class="extra-list__value">1 упаковка (100 г)</td>
               <td class="extra-list__field">200 Р.</td>
             </tr>
@@ -309,7 +309,7 @@
         <div class="extra-list__wrapper-up">
           <table class="extra-list__info ">
             <caption class="extra-list__name">Питьевая вода</caption>
-            <tr>
+            <tr class="extra-list__tr">
               <th class="extra-list__value">5 литров</td>
               <td class="extra-list__field">50 Р.</td>
             </tr>
@@ -321,7 +321,7 @@
         <div class="extra-list__wrapper-up">
           <table class="extra-list__info ">
             <caption class="extra-list__name">Молоко</caption>
-            <tr>
+            <tr class="extra-list__tr">
               <th class="extra-list__value">1 литр</td>
               <td class="extra-list__field">100 Р.</td>
             </tr>
@@ -333,7 +333,7 @@
         <div class="extra-list__wrapper-up">
           <table class="extra-list__info ">
             <caption class="extra-list__name">Витамины</caption>
-            <tr>
+            <tr class="extra-list__tr">
               <th class="extra-list__value">1 упаковка (30 г)</td>
               <td class="extra-list__field">300 Р.</td>
             </tr>
@@ -349,25 +349,29 @@
     </div>
   </main>
   <footer class="page-footer">
-    <div class=" page-footer__contacts-wrapper contacts__gray">
-      <div class="page-footer__contacts contacts container">
+    <div class="page-footer__contacts-wrapper page-footer__contacts-wrapper--gray">
+      <div class="page-footer__contacts container contacts">
         <p class="contacts__invitation">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
         <p class="contacts__adress">ул. Большая<br> Конюшенная, д. 19/8<br>
-          Санкт-Петербург</p>
+          <span class="contacts__town">Санкт-Петербург</span></p>
       </div>
     </div>
-    <picture>
+    <div class="page-footer__map">
+      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1579445322311!5m2!1sru!2sru" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
+    <!-- <picture>
       <source type="image/webp" media="(min-width:1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
       <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
       <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
       <source media="(min-width:1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
       <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-    <img class="page-footer__map page-footer__map--catalog" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="400" alt="Карта"></picture>
-    <div class="page-footer__bottom container">
-      <div class="page-footer__logo-title"><a class="page-footer__link" href="index.html">
-          <img class="page-footer__title-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
-        </a>
-      </div>
+    <img class="page-footer__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="400" alt="Карта"></picture> -->
+  </div>
+    <div class="page-footer__cont">
+      <div class="page-footer__bottom container">
+        <div class="page-footer__logo-title"><a class="page-footer__link" href="index.html">
+            <img class="page-footer__title-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
+          </a>
+        </div>
       <div class="social">
         <ul class="social__social-list">
           <li class="social__item">
