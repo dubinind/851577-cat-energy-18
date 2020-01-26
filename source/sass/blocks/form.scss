@@ -25,6 +25,11 @@
   margin-top: 42px;
 }
 
+.form__title--container {
+  width: $mobile;
+  margin: 0 auto;
+}
+
 .form__title--wrapper {
   border-top: 3px solid $button-green;
 }
@@ -113,8 +118,9 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  width: 201px;
+  width: 221px;
   padding-right: 20px;
+  padding-left: 20px;
   text-transform: none;
   position: relative;
   background: $font-color-light;
@@ -178,8 +184,9 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  width: 138px;
+  width: 162px;
   padding-right: 20px;
+  padding-left: 20px;
   text-transform: none;
   position: relative;
   background: $font-color-light;
@@ -207,11 +214,13 @@
 }
 
 .form__extra-title {
-  margin: 0 116px 0 0;
+  margin: 0;
   text-transform: none;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  width: 184px;
+  padding: 0 20px;
   position: relative;
   transform: translateY(-17px);
   background: $font-color-light;
@@ -334,6 +343,11 @@
     padding: 0;
   }
 
+  .form__title--container {
+    width: $tablet;
+    margin: 0 auto;
+  }
+
   .form__cat {
     padding-top: 64px;
     padding-bottom: 54px;
@@ -391,8 +405,6 @@
     height: 18px;
     top: 7px;
     left: -48px;
-    background-image: url("../img/radiobutton-form-tablet-on.png");
-    background-repeat: no-repeat;
   }
 
   .form__contact {
@@ -404,6 +416,7 @@
     line-height: 36px;
     position: relative;
     width: 594px;
+    margin-left: 29px;
     transform: translateY(-53px);
     padding: 0 41px;
   }
@@ -437,8 +450,9 @@
     font-size: 36px;
     line-height: 36px;
     position: relative;
-    width: 259px;
-    padding: 0 41px;
+    width: 260px;
+    padding: 0 40px;
+    margin-left: 29px;
     transform: translateY(-23px);
   }
 
@@ -471,8 +485,9 @@
     font-size: 36px;
     line-height: 36px;
     position: relative;
-    margin-right: 418px;
+    width: 292px;
     margin-top: 0;
+    margin-left: 29px;
     padding: 0 41px;
     transform: translateY(-25px);
   }
@@ -554,6 +569,11 @@
     justify-content: space-between;
   }
 
+  .form__title--container {
+    width: $desktop;
+    margin: 0 auto;
+  }
+
   .form__cat {
     padding: 0;
     width: 569px;
@@ -581,8 +601,8 @@
   .form__contact-title {
     margin-top: 23px;
     transform: translateY(-48px);
-    padding: 0;
-    width: 553px;
+    width: 594px;
+    margin-left: 0;
   }
 
   .form__contact-list {
@@ -614,8 +634,8 @@
   }
 
   .form__comment-title {
-    width: 219px;
-    padding: 0;
+    width: 258px;
+    margin-left: 0;
   }
 
   .form__comment--wrapper {
@@ -629,9 +649,8 @@
   }
 
   .form__extra-title {
-    padding-left: 0;
-    width: 250px;
-    margin-right: 0;
+    width: 292px;
+    margin-left: 0;
   }
 
   .form__extra-list {
