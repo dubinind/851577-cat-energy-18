@@ -4,14 +4,20 @@
   margin: 0;
 }
 
+.catalog__bonus {
+  margin-top: 41px;
+}
+
 .catalog__title {
   font-size: 36px;
   line-height: 60px;
+  width: 450px;
+  margin: 0 auto;
   color: $font-color-black;
   font-weight: 400;
   border-top: 1px solid $button-gray-hover;
   border-bottom: 1px solid $button-gray-hover;
-  padding: 15px 0 28px 0;
+  padding: 15px 20px 28px 20px;
 }
 
 @media (min-width: $tablet) {
@@ -19,6 +25,7 @@
     font-size: 60px;
     border: none;
     padding: 0;
+    width: $tablet;
     margin-top: 43px;
     margin-bottom: 22px;
   }
@@ -34,6 +41,18 @@
   .catalog__title {
     font-size: 60px;
     margin-top: 58px;
+    width: $desktop;
     margin-bottom: 22px;
+  }
+
+  .catalog__container {
+    width: $desktop;
+    padding: 0 40px;
+  }
+
+  .catalog__item {
+    width: 245px;
+    margin-top: 143px;
+    margin-bottom: 0;
   }
 }

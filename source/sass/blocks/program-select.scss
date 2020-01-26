@@ -27,3 +27,13 @@
     margin-top: 54px;
   }
 }
+
+@media (min-width: $desktop) {
+  .program-select__title {
+    margin-top: 58px;
+  }
+
+  .program-select__description {
+    margin-left: 0;
+  }
+}

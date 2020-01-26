@@ -301,6 +301,10 @@
   .programm__item {
     max-width: 570px;
     padding: 68px 56px 53px 52px;
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
   }
 
   .programm__text {
